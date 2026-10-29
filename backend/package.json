@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "server":"nodemon server.js"
+    "server": "nodemon server.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
@@ -20,6 +20,7 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.2.2",
     "nodemailer": "^8.0.1",
+    "nodeman": "^1.1.2",
     "nodemon": "^3.1.14"
   }
 }

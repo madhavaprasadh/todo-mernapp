@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 12px;
+  background: #f3f4f6;
+  color: #333;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e5e7eb;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 16px;
+}
+
+.todo-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin: 10px 0 24px;
+  color: #777;
+}
+
+.add-form,
+.edit-form {
+  display: flex;
+  gap: 10px;
+}
+
+.add-form input,
+.edit-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline-color: #999;
+}
+
+.add-form button {
+  background: #e5e7eb;
+}
+
+.error {
+  padding: 10px;
+  color: #b91c1c;
+  background: #fef2f2;
+  border-radius: 5px;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.todo-header h2 {
+  font-size: 18px;
+}
+
+.todo-header span {
+  color: #777;
+  font-size: 14px;
+}
+
+.todo-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-wrap: anywhere;
+}
+
+.todo-label input {
+  accent-color: #777;
+}
+
+.completed {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.edit,
+.save,
+.delete,
+.cancel {
+  background: #f3f4f6;
+}
+
+.empty,
+.status {
+  padding: 20px 0;
+  color: #777;
+  text-align: center;
+}
+
+.footer {
+  margin: 20px 0 0;
+  color: #777;
+  font-size: 14px;
+  text-align: center;
+}

@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 1.5rem;
+  background: linear-gradient(to bottom right, #bfdbfe, #c084fc);
+}
+
+.login-logo {
+  position: absolute;
+  left: 1rem;
+  top: 1.25rem;
+  width: 7rem;
+  cursor: pointer;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 24rem;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: #0f172a;
+  color: #a5b4fc;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2);
+}
+
+.login-title {
+  margin: 0 0 0.75rem;
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-subtitle {
+  margin: 0 0 0.75rem;
+  text-align: center;
+}
+
+.login-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  background-color: #333a5c;
+}
+
+.login-input-group img {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.login-input-group input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.login-input-group input::placeholder {
+  color: #a5b4fc;
+  opacity: 0.8;
+}
+
+.login-forgot {
+  margin: 0 0 1rem;
+  color: #a5b4fc;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.login-forgot:hover {
+  text-decoration: underline;
+}
+
+.login-submit {
+  width: 100%;
+  padding: 0.625rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: #6366f1;
+  color: #fff;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-submit:hover {
+  background-color: #4f46e5;
+}
+
+.login-switch {
+  margin: 1rem 0 0;
+  color: #9ca3af;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.login-switch span {
+  color: #60a5fa;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-switch span:hover {
+  color: #93c5fd;
+}
+
+@media (min-width: 640px) {
+  .login-logo {
+    left: 5rem;
+    width: 8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .login-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .login-title {
+    font-size: 1.625rem;
+  }
+}
